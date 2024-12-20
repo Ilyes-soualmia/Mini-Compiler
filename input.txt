@@ -1,0 +1,19 @@
+VAR_GLOBAL {
+}
+
+DECLARATION {
+    int a;
+    const int b = 5;
+    float arr[10];
+}
+
+INSTRUCTION {
+    WRITE("The value is:", a);
+    READ(a);
+    IF(a > 0) {
+        WRITE("Positive number");
+    } ELSE {
+        WRITE("Non-positive number");
+    }
+}
+
